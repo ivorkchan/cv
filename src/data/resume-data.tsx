@@ -3,7 +3,7 @@ import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Yue Cheng",
   initials: "CY",
-  location: "Toronro, Canada",
+  location: "Toronto, Canada",
   locationLink: "https://www.google.com/maps/place/Toronto",
   about:
     "Student at University of Toronto, pursuing a Bachelor's degree in Computer Science.",
