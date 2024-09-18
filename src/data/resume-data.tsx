@@ -50,7 +50,7 @@ export const RESUME_DATA = {
       start: "2021",
       end: "2022",
       description:
-        "Contributed to nationally funded research projects, authored academic papers, and conducted research on rural revitalization, urban renewal, and traditional architecture preservation. Assisted in the conceptual design of urban and rural planning projects.",
+        "Contributed to 2 nationally funded research projects, co-authored 5 academic papers, and conducted research on rural revitalization, urban renewal, and traditional architecture preservation. Assisted in the conceptual design of 3 urban and rural planning projects.",
     },
     {
       company: "ECOGENICA",
@@ -65,7 +65,7 @@ export const RESUME_DATA = {
   ],
   skills: [
     "HTML/CSS/JS/TS",
-    "Tailwind/Sass",
+    "Tailwind",
     "React/Next.js",
     "Astro",
     "Python",

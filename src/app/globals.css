@@ -75,6 +75,71 @@
   }
 }
 
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    min-width: 32px;
+    min-height: 32px;
+    background-color: hsl(var(--muted));
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 16px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-button,
+  ::-webkit-scrollbar-corner {
+    display: none;
+  }
+
+  ::selection {
+    text-decoration-color: hsl(var(--bg));
+    background: hsl(var(--muted));
+  }
+}
+
+/* typography */
+@layer base {
+  * {
+    box-sizing: border-box;
+    box-decoration-break: clone;
+  }
+
+  html {
+    font-synthesis: none;
+    font-optical-sizing: auto;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    orphans: 3;
+    widows: 3;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-chars: 8 4 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    hyphens: auto;
+    hyphenate-limit-chars: 8 4 4;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    hanging-punctuation: first last;
+  }
+}
+
 .print-force-new-page {
   page-break-before: always;
 }
